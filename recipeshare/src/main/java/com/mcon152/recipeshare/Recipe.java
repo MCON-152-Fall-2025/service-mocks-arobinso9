@@ -1,5 +1,6 @@
 package com.mcon152.recipeshare;
 
+<<<<<<< HEAD
 public class Recipe {
     private Long id;
     private String title;
@@ -11,11 +12,41 @@ public class Recipe {
     public Recipe() {}
 
     public Recipe(Long id, String title, String description, String ingredients, String instructions) {
+=======
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "recipes")
+public class Recipe {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String title;
+    private String description;
+
+    @Column(length = 2000)
+    private String ingredients;
+
+    @Column(length = 4000)
+    private String instructions;
+
+    private Integer servings; // New field for number of servings
+
+    // Constructors
+    public Recipe() {}
+
+    public Recipe(Long id, String title, String description, String ingredients, String instructions, Integer servings) {
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
         this.id = id;
         this.title = title;
         this.description = description;
         this.ingredients = ingredients;
         this.instructions = instructions;
+<<<<<<< HEAD
+=======
+        this.servings = servings;
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
     }
 
     // Getters and setters
@@ -33,4 +64,10 @@ public class Recipe {
 
     public String getInstructions() { return instructions; }
     public void setInstructions(String instructions) { this.instructions = instructions; }
+<<<<<<< HEAD
+=======
+
+    public Integer getServings() { return servings; }
+    public void setServings(Integer servings) { this.servings = servings; }
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
 }

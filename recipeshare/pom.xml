@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+=======
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.5.5</version>
+<<<<<<< HEAD
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+=======
+        <relativePath/>
+    </parent>
+
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
     <groupId>com.mcon152</groupId>
     <artifactId>recipeshare</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>recipeshare</name>
     <description>recipeshare</description>
+<<<<<<< HEAD
     <url/>
     <licenses>
         <license/>
@@ -30,26 +45,70 @@
         <java.version>21</java.version>
     </properties>
     <dependencies>
+=======
+
+    <properties>
+        <java.version>21</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- Web (managed by Boot 3.5.5; includes Spring MVC + embedded Tomcat) -->
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+<<<<<<< HEAD
+=======
+        <!-- Bean Validation provider (fixes NoProviderFoundException) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
+        <!-- Data & in-memory DB (optional for your demo) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Devtools (dev-only hot reload) -->
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+<<<<<<< HEAD
+=======
+
+        <!-- Testing -->
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+<<<<<<< HEAD
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>2.5.0</version>
+=======
+
+        <!-- OpenAPI/Swagger UI — align with Boot 3.5.x / Spring 6.2 -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.8.13</version>
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
         </dependency>
     </dependencies>
 
@@ -61,5 +120,8 @@
             </plugin>
         </plugins>
     </build>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
 </project>

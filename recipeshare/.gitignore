@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+<<<<<<< HEAD
+=======
+/src/test/java/com/mcon152/recipeshare/service/RecipeServiceTestSolution.java
+>>>>>>> d72216e26235d7e0812b44fe5c346e1092aa89a6
