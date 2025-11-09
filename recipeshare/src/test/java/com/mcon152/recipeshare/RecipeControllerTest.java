@@ -51,7 +51,7 @@ class RecipeControllerTest {
             mockMvc.perform(post("/api/recipes")
                             .contentType(MediaType.APPLICATION_JSON)
                             .content(jsonString))
-                    .andExpect(status().isOk())
+                    .andExpect(status().isCreated())
                     .andExpect(jsonPath("$.title").value("Cake"))
                     .andExpect(jsonPath("$.description").value("Delicious cake"))
                     .andExpect(jsonPath("$.ingredients").value("1 cup of flour, 1 cup of sugar, 3 eggs"))
