@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 /**
- * Assignment:   Implement all TODOs using Mockito features covered in class:
+ * Assignment: Implement all TODOs using Mockito features covered in class:
  *  - @Mock, @InjectMocks, @Captor, @ExtendWith(MockitoExtension.class)
  *  - Stubbing: thenReturn / thenAnswer / thenThrow
  *  - Verifications: verify(...), times/never/atLeast..., verifyNoMoreInteractions
